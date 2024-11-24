@@ -40,6 +40,11 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this@MainActivity, AddDataActivity::class.java)
                 startActivity(intent)
             }
+            btnLogout.setOnClickListener{
+                prefManager.setLoggedIn(false)
+                startActivity(Intent(this@MainActivity, login_activity::class.java))
+                finish()
+            }
         }
     }
 
