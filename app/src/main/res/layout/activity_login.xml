@@ -95,7 +95,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:padding="17dp"
-            android:text="Login"
+            android:text="Register"
             android:textStyle="bold"
             />
 
