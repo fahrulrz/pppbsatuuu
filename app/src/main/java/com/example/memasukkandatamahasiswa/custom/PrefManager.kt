@@ -26,6 +26,7 @@ class PrefManager private constructor(context: Context){
             }
         }
     }
+
     init {
         sharedPreferences = context.getSharedPreferences(PREFS_FILENAME, Context.MODE_PRIVATE)
     }
