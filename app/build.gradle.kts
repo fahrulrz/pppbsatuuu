@@ -5,7 +5,6 @@ plugins {
     id("kotlin-parcelize")
     //    ditambah ketika ingin menggunakan storage
     alias(libs.plugins.kotlin.kapt)
-    
 }
 
 android {

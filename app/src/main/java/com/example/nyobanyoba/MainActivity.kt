@@ -32,16 +32,11 @@ class MainActivity : AppCompatActivity() {
         checkLoginStatus()
 
         with(binding) {
-//            btnAddUser.setOnClickListener{
-//                startActivity(Intent(this@MainActivity, LoginActivity::class.java))
-//            }
 
 //           menghubungkan bottom navigation dengan fragment
             val navController = findNavController(R.id.nav_host_fragment)
             bottomNavigationView.setupWithNavController(navController)
 
-//            val tvUsers = findViewById<TextView>(R.id.tvUsers)
-//            fetchUsers(tvUsers)
         }
     }
 
@@ -64,31 +59,4 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
-
-    //  mengambil data dari database firebase
-//    private fun fetchUsers(tvUsers: TextView) {
-//        CoroutineScope(Dispatchers.IO).launch {
-//            try {
-//                val response = RetrofitInstance.api.getUsers()
-//                if (response.isSuccessful) {
-//                    val users = response.body() // Respons sekarang berupa List<User>
-//                    val userList = users?.joinToString(separator = "\n") { user ->
-//                        "ID: ${user._id}, Name: ${user.name}, Age: ${user.age}"
-//                    }
-//                    runOnUiThread {
-//                        tvUsers.text = userList ?: "No users found"
-//                    }
-//                } else {
-//                    runOnUiThread {
-//                        tvUsers.text = "Error fetching users: ${response.errorBody()?.string()}"
-//                    }
-//                }
-//            } catch (e: Exception) {
-//                runOnUiThread {
-//                    tvUsers.text = "Exception: $e"
-//                }
-//            }
-//        }
-//    }
 }

@@ -68,7 +68,7 @@ class FavoriteFragment : Fragment() {
         val db = FilmRoomDatabase.getDatabase(requireContext())
         mFilmDao = db!!.filmDao()!!
         with(binding) {
-            listFilm.apply {
+            listFilmm.apply {
                 adapter = filmAdapter
                 layoutManager = GridLayoutManager(
                     this@FavoriteFragment.requireContext(),
@@ -100,7 +100,6 @@ class FavoriteFragment : Fragment() {
             }
         }
     }
-
 
     companion object {
         /**

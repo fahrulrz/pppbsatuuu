@@ -22,6 +22,5 @@ class HomeAdminActivity : AppCompatActivity() {
             val navController = findNavController(R.id.nav_host_fragment_admin)
             bottomNavigationViewAdmin.setupWithNavController(navController)
         }
-
     }
 }

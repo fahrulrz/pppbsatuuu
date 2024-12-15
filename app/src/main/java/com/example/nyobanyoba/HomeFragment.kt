@@ -68,25 +68,6 @@ class HomeFragment : Fragment() {
                     false
                 )
             }
-
-//            addOnItemTouchListener(
-//                RecyclerItemClickListener(
-//                    requireContext(),
-//                    this
-//                ) {
-//                    val film = filmAdapter.listFilm[it]
-//                    handleItemClick(film)
-//                }
-//            )
-
-//            btnAddUser.setOnClickListener{
-//                val intent = Intent(requireContext(), AddUserActivity::class.java)
-//                startActivity(intent)
-//            }
-//            val action = homeDirections.actionHome2ToCheckoutFragment2(txtContohProductName.text.toString())
-//            btnCheckout.setOnClickListener{
-//                findNavController().navigate(action)
-//            }
         }
     }
 

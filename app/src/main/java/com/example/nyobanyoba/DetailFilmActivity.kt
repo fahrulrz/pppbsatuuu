@@ -47,7 +47,6 @@ class DetailFilmActivity : AppCompatActivity() {
                     .into(filmCover);
 
                 btnBack.setOnClickListener{
-
                     when (prefManager.getRole()) {
                         "admin" -> {
                             startActivity(Intent(this@DetailFilmActivity, HomeAdminActivity::class.java))

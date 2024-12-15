@@ -32,5 +32,4 @@ interface FirebaseApi {
     suspend fun deleteFilm(
         @Path("id") id: String
     ): Response<Void>
-
 }

@@ -102,9 +102,4 @@ class FilmAdapterAdmin(private val listFilm: MutableList<FilmResponse>) :
         listFilm.addAll(newList)
         notifyDataSetChanged() // Memberi tahu RecyclerView untuk memperbarui tampilan
     }
-
-
-
-
-
 }
